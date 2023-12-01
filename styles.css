@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 100%;
+    width: 175px;
+    position: fixed;
+    background-color: rgba(56, 61, 62, 0.871);
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    border-radius: 50%;
+    color: black;
+}
+
+.content {
+    margin-left: 175px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #5993e4, #fff);
+}
+.social-icons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+}
+.social-icons a {
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+.burger-menu {
+    display: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .navbar {
+        width: 0; 
+        overflow: hidden;
+        transition: width 0.3s;
+    }
+
+    .navbar.show {
+        width: 175px; 
+    }
+
+    .navbar a {
+        display: none; 
+    }
+
+    .navbar.show a {
+        display: block; 
+    }
+}
+h2 {
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/*th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}*/
+
+tr:hover {
+    background-color: #8aace7;
+}
+
+.contact-info {
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.category {
+    font-weight: bold;
+}
+
+.details {
+    margin-bottom: 10px;
+}

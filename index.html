@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>MyPortfolio</title>
+</head>
+<body>    
+  <div class="navbar">
+    <img class="profile" src="photu.jpeg" alt="profile">
+    <a href="index.html"><b>Gajendra Nagre</b></a>
+    <a href="#qualification">Qualification</a>
+    <a href="#skills">Technology Stack</a>
+    <a href="#projects">Projects</a>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/gajendra-nagre-338947153" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Gajendra-28" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:nagregajendra17@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="burger-menu" onclick="toggleNavbar()">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <div class="content">
+    <h2>Contact Information</h2>
+    <div class="contact-info">
+        <div class="details">
+            <span class="category">Address:</span>
+            <span>228, At-Baygaon Bu, Post-Mendgaon, Taluka-Deulgaon Raja, Dist-Buldana 443204</span>
+        </div>
+        <div class="details">
+            <span class="category">Mobile:</span>
+            <span>9850077683</span>
+        </div>
+        <div class="details">
+            <span class="category">E-mail:</span>
+            <span>nagregajendra17@gmail.com</span>
+        </div>
+        <div class="details">
+            <span class="category">Date of Birth:</span>
+            <span>09/02/1999</span>
+        </div>
+    </div>
+    <h2>Objective</h2>
+    <p class="contact-info">I hold a Bachelor's degree in Computer Science and am currently pursuing a Master's Degree in Computer Application. 
+      My aim is to leverage my technical skill set to actively engage with systems that drive organizational growth, while also facilitating the achievement of my personal goals.</p>
+  </div>
+  <div class="content" id="qualification">
+    <h2>Education Details</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Qualification</th>
+                <th>Percentage/CGPA</th>
+                <th>Board/University</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SSC</td>
+                <td>80.80 %</td>
+                <td>Amravati board</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>66 %</td>
+                <td>Amravati board</td>
+            </tr>
+            <tr>
+                <td>Graduation (BCS)</td>
+                <td>76.70%</td>
+                <td>BAMU University</td>
+            </tr>
+            <tr>
+                <td>Post-Graduation (MCA)</td>
+                <td>6.4 CGPA</td>
+                <td>BAMU University</td>
+            </tr>
+        </tbody>
+    </table>  
+  </div>
+  <div class="content" id="skills">
+    <h2>Skills and Tools</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Skills/Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Languages</td>
+                <td>C programming(Basics), Java(OOPS Concepts), C# & DOTNET(Intermediate), Python, Basic Android & Basic Cloud Computing</td>
+            </tr>
+            <tr>
+                <td>Application and Build tools</td>
+                <td>Turbo C++, Visual Studio 2019, Visual Studio Code, Oracle, Android Studio, Git & Github</td>
+            </tr>
+            <tr>
+                <td>Web Technologies</td>
+                <td>HTML, CSS, DATABASES</td>
+            </tr>
+            <tr>
+                <td>Database</td>
+                <td>MYSQL, ORACLE</td>
+            </tr>
+            <tr>
+                <td>Operating system</td>
+                <td>Windows 8/11</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+  <div class="content" id="projects">
+    <h2>Projects</h2>
+      <ul class="contact-info">
+        <li>Gathering Management System ( HTML, CSS, PHP, Oracle )2021</li>
+        <li>Basic Student Registration Form ( ASP.NET and C# )2023</li>
+        <li>Basic Calculator  Application ( Android Studio )2023</li>
+      </ul>
+  </div>
+
+  <script>
+    function toggleNavbar() {
+        var navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
